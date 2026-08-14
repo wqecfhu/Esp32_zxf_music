@@ -32,8 +32,9 @@ SPIClass hspi(HSPI);
 
 #define COUNT(arr)   sizeof(arr) / sizeof(arr[0])
 
-void core0_tone(void* ps);
-void core1_void(void* ps);
+//配置多核心同步
+void core0_tone(void* ps);    //核心0 音乐
+void core1_void(void* ps);    //核心1 刷新
 
 
 GxEPD2_BW<GxEPD2_426_GDEQ0426T82, GxEPD2_426_GDEQ0426T82::HEIGHT> display(
